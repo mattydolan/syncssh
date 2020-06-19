@@ -7,4 +7,5 @@ pipelines:
          - dotnetcore
         script:
           - echo "test"
+          - dir
           - dotnet restore
