@@ -2,5 +2,9 @@ pipelines:
   default:
     - step:
         name: Nuget Restore
+        image: microsoft/dotnet:2-sdk
+        caches:
+         - dotnetcore
         script:
           - echo "test"
+          - dotnet restore
