@@ -1,1 +1,6 @@
-nuget restore
+pipelines:
+  default:
+    - step:
+        name: Nuget Restore
+        script:
+          - nuget restore
