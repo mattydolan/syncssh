@@ -7,8 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.35" />
-    <PackageReference Include="DddsUtils.Data" Version="1.7.0.15" />
-    <PackageReference Include="DddsUtils.Logging.NetStandard" Version="1.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.5" />
     <PackageReference Include="NLog" Version="4.7.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />

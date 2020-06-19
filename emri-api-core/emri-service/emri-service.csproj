@@ -10,7 +10,6 @@
     <PackageReference Include="MassTransit.AspNetCore" Version="6.3.2" />
     <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="6.3.2" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="6.3.2" />
-    <PackageReference Include="DddsUtils.Logging.NetStandard" Version="1.0.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="1.1.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.5" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
