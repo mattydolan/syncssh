@@ -17,8 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DddsUtils.Data" Version="1.7.0.15" />
-    <PackageReference Include="DddsUtils.Logging.NetStandard" Version="1.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.5" />
