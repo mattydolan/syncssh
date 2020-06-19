@@ -7,5 +7,5 @@ pipelines:
          - dotnetcore
         script:
           - echo "test"
-          - dir
-          - dotnet restore
+          - cd emri-api-core
+          - nuget restore
