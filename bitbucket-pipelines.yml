@@ -2,7 +2,7 @@ pipelines:
   default:
     - step:
         name: Nuget Restore
-        image: microsoft/dotnet:3.1-sdk
+        image: mcr.microsoft.com/dotnet/core/sdk:3.1
         caches:
          - dotnetcore
         script:
