@@ -3,4 +3,4 @@ pipelines:
     - step:
         name: Nuget Restore
         script:
-          - dotnet restore
+          - echo "test"
