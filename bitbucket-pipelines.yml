@@ -3,4 +3,4 @@ pipelines:
     - step:
         name: Nuget Restore
         script:
-          - nuget restore
+          - dotnet restore
