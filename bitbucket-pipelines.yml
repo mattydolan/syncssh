@@ -8,6 +8,6 @@ pipelines:
         script:
           - echo "test"
           - cd emri-api-core
-          - dotnet add emri-api-core package Newtonsoft.Json
+          - dotnet add emri-api-core.sln package Newtonsoft.Json
           - dotnet restore
           - dotnet build
