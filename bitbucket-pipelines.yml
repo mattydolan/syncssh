@@ -8,5 +8,6 @@ pipelines:
         script:
           - echo "test"
           - cd emri-api-core
-          - dotnet restore src -s $NUGET_PREAUTH -s https://api.nuget.org/v3/index.json
+          - dotnet add package Newtonsoft.Json
+          - dotnet restore
           - dotnet build
