@@ -7,7 +7,6 @@ pipelines:
          - dotnetcore
         script:
           - echo "test"
-          - cat /etc/docker/daemon.json
           - cd emri-api-core
-          - dotnet restore
+          - dotnet restore src -s $NUGET_PREAUTH -s https://api.nuget.org/v3/index.json
           - dotnet build
