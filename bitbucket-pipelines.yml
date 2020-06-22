@@ -7,6 +7,7 @@ pipelines:
          - dotnetcore
         script:
           - echo "test"
+          - nslookup nuget.utility.advantasure.com
           - cd emri-api-core
           - dotnet restore
           - dotnet build
