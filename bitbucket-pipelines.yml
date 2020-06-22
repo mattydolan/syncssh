@@ -6,6 +6,7 @@ pipelines:
         caches:
          - dotnetcore
         script:
+          - nuget restore
           - echo "test"
           - cd emri-api-core
           - dotnet build
