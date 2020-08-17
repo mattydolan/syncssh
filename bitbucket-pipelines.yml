@@ -1,0 +1,6 @@
+pipelines:
+  default:
+    - step:
+        name: Sync repo
+        script:
+          - git remote -v
