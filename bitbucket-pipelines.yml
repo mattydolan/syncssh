@@ -5,5 +5,5 @@ pipelines:
         script:
           - git remote -v
           - git remote add --mirror=fetch secondary https://mattydolan:Veget4ble!6O3@github.com/mattydolan/syncme
-          - git fetch origin
-          - git push secondary --all
+          - git fetch secondary
+          - git push origin    
