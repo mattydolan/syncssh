@@ -4,3 +4,6 @@ pipelines:
         name: Sync repo
         script:
           - git remote -v
+          - git remote add --mirror=fetch secondary https://github.com/mattydolan/syncme
+          - git fetch origin
+          - git push secondary --all
