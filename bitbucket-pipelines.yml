@@ -3,6 +3,8 @@ pipelines:
     - step:
         name: Sync repo
         script:
+          - pat=pxarvee5z3fum4p567cswqepkocvkekpbkv6w7m7rr6g7vo3qatq
+          - echo $pat
           - git remote add --mirror=fetch secondary https://mattdolanrva@dev.azure.com/mattdolanrva/Test/_git/syncssh
           - git fetch origin
           - git push secondary --all --force
