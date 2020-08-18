@@ -7,4 +7,4 @@ pipelines:
           - git remote add --mirror=fetch secondary https://mattdolanrva:$(echo $pat)@dev.azure.com/mattdolanrva/Test/_git/sshme
           - git remote -v
           - git fetch origin
-          - git push secondary --all --force --unshallow
+          - git push secondary --force --verbose
