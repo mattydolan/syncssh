@@ -4,7 +4,6 @@ pipelines:
         name: Sync repo
         script:
           - pat=pxarvee5z3fum4p567cswqepkocvkekpbkv6w7m7rr6g7vo3qatq
-          - b64_pat=$(echo ":$pat" | base64)
-          - git -c http.extraHeader="Authorization: Basic ${b64_pat}" remote add --mirror=fetch secondary https://mattdolanrva@dev.azure.com/mattdolanrva/Test/_git/syncssh
+          - git remote add --mirror=fetch secondary https://mattdolanrva:pxarvee5z3fum4p567cswqepkocvkekpbkv6w7m7rr6g7vo3qatq@dev.azure.com/mattdolanrva/Test/_git/syncssh
           - git fetch origin
           - git push secondary --all --force
