@@ -4,7 +4,8 @@ pipelines:
         name: Sync repo
         script:
           - pat=pxarvee5z3fum4p567cswqepkocvkekpbkv6w7m7rr6g7vo3qatq
-          - git remote add --mirror=fetch secondary https://mattdolanrva:$(echo $pat)@dev.azure.com/mattdolanrva/Test/_git/sshme
+          #- git remote add --mirror=fetch secondary https://mattdolanrva:$(echo $pat)@dev.azure.com/mattdolanrva/Test/_git/sshme
+          - git remote add --mirror=fetch secondary git@github.com:mattydolan/syncssh
           - git remote -v
           - git fetch origin
-          - git push secondary --force --verbose
+          - git push secondary --all --force
