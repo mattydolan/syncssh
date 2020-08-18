@@ -6,4 +6,4 @@ pipelines:
           - git remote -v
           - git remote add --mirror=fetch secondary git@github.com:mattydolan/syncssh
           - git fetch origin
-          - git push secondary --all   
+          - git push secondary --all --force
