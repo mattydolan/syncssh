@@ -3,6 +3,6 @@ pipelines:
     - step:
         name: Sync repo
         script:
-          - git remote add --mirror=fetch secondary git@ssh.dev.azure.com:v3/mattdolanrva/Test/syncssh
+          - git remote add --mirror=fetch secondary https://mattdolanrva@dev.azure.com/mattdolanrva/Test/_git/syncssh
           - git fetch origin
           - git push secondary --all --force
